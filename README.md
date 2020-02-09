@@ -1,8 +1,23 @@
 # Combined Statistical-Dynamical downscaling of wind components over British Isles and Surrounding waters ##
 
-This file provides the installation and run details to be able to perform multiple linear regression, ridge regression, lasso regression and bilinear interpolation on low resolution ERA5 renanalysis data, to generate high resolution data.
+This file provides the installation and run details to be able to perform multivariate linear regression, ridge regression, lasso regression and bilinear interpolation on low resolution ERA5 renanalysis data, to generate high resolution data.
 
-### Installing ##
+
+### Task ##
+The aim of this project was to use statistical learning methods to downscale wind components from 30x30 km resolution to 3x3 km resolution, see the plot below - Left shows the low resolution wind data taken from the ERA5 land reanalysis. Right shows the data at higher resolution, produced by a mesoscale atmospheric model.
+
+![](/images/downscale.png)
+
+### Results ## 
+Below shows a comparison of the linear regression method versus the commonly used method, namely bi-linear interpolation. A clear improvement can be seen compared to the baseline especially in regions of complex terrain, highlighting the ability of the MLR method to accruately capture the topological features of the ground truth data.
+
+![](/images/baseline_comparison.png)
+
+
+
+
+
+### Installation ##
 
 to set-up the environment, you just need to run the following command with ananconda:
 
